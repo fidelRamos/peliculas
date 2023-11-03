@@ -9,51 +9,57 @@ import Card from 'react-bootstrap/Card';
 
 function GridComplexExample() {
   return (
-    <><Card style={{ width: '18rem' }}>
+    <>
+    <div className="imagen-usuario">
+    <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src="holder.js/100px180" />
         <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Nombre</Card.Title>
             <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+                recuerde que el peso de la imagen no debe superar el 1mb de peso maximo, deben ser archivos de extencion .jpg
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Button variant="primary">subir imagen</Button>
         </Card.Body>
 
-    </Card><Form className="datos-usuarios">
+    </Card>
+
+    </div>
+
+    <div className="datos-usuarios"> 
+    <Form >
             <Row className="mb-3">
                 <Form.Group as={Col} controlId="formGridEmail">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Label>Nombre</Form.Label>
+                    <Form.Control type="email" placeholder="" />
                 </Form.Group>
 
                 <Form.Group as={Col} controlId="formGridPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
+                    <Form.Label>Apellido</Form.Label>
+                    <Form.Control type="password" placeholder="" />
                 </Form.Group>
             </Row>
 
             <Form.Group className="mb-3" controlId="formGridAddress1">
-                <Form.Label>Address</Form.Label>
-                <Form.Control placeholder="1234 Main St" />
+                <Form.Label>direccion</Form.Label>
+                <Form.Control placeholder="" />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formGridAddress2">
-                <Form.Label>Address 2</Form.Label>
-                <Form.Control placeholder="Apartment, studio, or floor" />
+                <Form.Label>Pelicula Favorita</Form.Label>
+                <Form.Control placeholder="" />
             </Form.Group>
 
             <Row className="mb-3">
                 <Form.Group as={Col} controlId="formGridCity">
-                    <Form.Label>City</Form.Label>
+                    <Form.Label>ciudad</Form.Label>
                     <Form.Control />
                 </Form.Group>
 
                 <Form.Group as={Col} controlId="formGridState">
-                    <Form.Label>State</Form.Label>
-                    <Form.Select defaultValue="Choose...">
-                        <option>Choose...</option>
-                        <option>...</option>
+                    <Form.Label>Provincia</Form.Label>
+                    <Form.Select defaultValue="Elegir...">
+                        <option>Guayaquil</option>
+                        <option>Playas</option>
                     </Form.Select>
                 </Form.Group>
 
@@ -68,9 +74,12 @@ function GridComplexExample() {
             </Form.Group>
 
             <Button variant="primary" type="submit">
-                Submit
+                Editar
             </Button>
-        </Form></>
+        </Form>
+        </div>
+        
+        </>
       
   );
 

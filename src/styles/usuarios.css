@@ -1,8 +1,48 @@
-.datos-usuarios{
-    
-    border: 1px solid #1E679A;
-    width: 280px;
-    
-
-    
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    font-size: 18px;
+    background-color: #f5f6f7;
+  }
+  .datos-usuarios{
+    width: 1080px;
+    height: 360px;
+    margin: 10px 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 3px 12px 1px rgb(0,0,0 / 9);
+    padding: 40px;
+  }
+  .imagen-usuario{
+    width: 1080px;
+    height: 360px;
+    margin: 10px 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 3px 12px 1px rgb(0,0,0 / 9);
+    padding: 40px;
 }
+.Usuario{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: right;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .contenedor-Usuario{
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
