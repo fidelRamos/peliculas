@@ -12,7 +12,7 @@ function GridComplexExample() {
     <>
     <div className="imagen-usuario">
     <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Img variant="top" src="images/OIP.jpeg" />
         <Card.Body>
             <Card.Title>Nombre</Card.Title>
             <Card.Text>
